@@ -21,4 +21,24 @@ object Hello extends App {
   val y = nested.map(x => "ss").value
   println(y)
 
+  //  for {
+  //    x <- Nested[List, Option, Int](List(Option(3)))
+  //    y <- Nested[List, Option, Int](List(Option(3)))
+  //    z <- Nested[Option, Option, Int](Option(Option(3)))
+  //  } yield {
+  //    println(x)
+  //    println(y)
+  //    println(z)
+  //  }
+
+//  Nested[List, Option, Int](List(Option(3))).mapK[Option] { k => Option(k) }
+  //  Nested[List, Option, Int](List(Option(3))).mapK { x =>
+  //    Nested[List, Option, Int](List(Option(4))).map { y =>
+  //      Nested[Option, Option, Int](Option(Option(5))).map { z =>
+  //        println(x)
+  //        println(y)
+  //        println(z)
+  //      }
+  //    }
+  //  }
 }
